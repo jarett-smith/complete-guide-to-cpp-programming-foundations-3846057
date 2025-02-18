@@ -6,13 +6,14 @@
 #include <typeinfo>
 
 int main(){
-    auto score;
-    auto points;
-    auto height;
-    auto duration;
-    auto is_active;
-    auto initial;
-    auto title;
+    // must initialize the variables
+    auto score = 8;
+    auto points = 1235465498654654;
+    auto height = 6.2f;
+    auto duration = 90.0;
+    auto is_active = true;
+    auto initial = 'P'; // characters only have single quotes
+    auto title = "Soccer Champions"; // Strings have double quotes
 
     std::cout << "The type of score is " << typeid(score).name() << std::endl;
     std::cout << "The type of points is " << typeid(points).name() << std::endl;
